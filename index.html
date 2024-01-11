@@ -1,0 +1,667 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline **text-clifford**">
+    Testes de cores e padrões para paineis
+  </h1>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div >
+    <h3 class="text-lg leading-6 font-medium text-gray-900">Quadro stats</h3>
+    <dl class="mt-5 grid grid-cols-1 rounded-lg bg-white overflow-hidden shadow divide-y divide-gray-200 md:grid-cols-3 md:divide-y-0 md:divide-x">
+      <div class="px-4 py-5 sm:p-6">
+        <dt class="text-base font-normal text-gray-900">Dado 1</dt>
+        <dd class="mt-1 flex justify-between items-baseline md:block lg:flex">
+          <div class="flex items-baseline text-2xl font-semibold text-indigo-600">
+            71,897
+            <span class="ml-2 text-sm font-medium text-gray-500"> de 70,946 </span>
+          </div>
+  
+          <div class="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800 md:mt-2 lg:mt-0">
+            <!-- Heroicon name: solid/arrow-sm-up -->
+            <svg class="-ml-1 mr-0.5 flex-shrink-0 self-center h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only"> aumento de by </span>
+            12%
+          </div>
+        </dd>
+      </div>
+  
+      <div class="px-4 py-5 sm:p-6">
+        <dt class="text-base font-normal text-gray-900">Dado 2</dt>
+        <dd class="mt-1 flex justify-between items-baseline md:block lg:flex">
+          <div class="flex items-baseline text-2xl font-semibold text-indigo-600">
+            58.16%
+            <span class="ml-2 text-sm font-medium text-gray-500"> de 56.14% </span>
+          </div>
+  
+          <div class="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800 md:mt-2 lg:mt-0">
+            <!-- Heroicon name: solid/arrow-sm-up -->
+            <svg class="-ml-1 mr-0.5 flex-shrink-0 self-center h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only"> aumento de by </span>
+            2.02%
+          </div>
+        </dd>
+      </div>
+  
+      <div class="px-4 py-5 sm:p-6">
+        <dt class="text-base font-normal text-gray-900">Dado 3</dt>
+        <dd class="mt-1 flex justify-between items-baseline md:block lg:flex">
+          <div class="flex items-baseline text-2xl font-semibold text-indigo-600">
+            24.57%
+            <span class="ml-2 text-sm font-medium text-gray-500"> de 28.62% </span>
+          </div>
+  
+          <div class="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800 md:mt-2 lg:mt-0">
+            <!-- Heroicon name: solid/arrow-sm-down -->
+            <svg class="-ml-1 mr-0.5 flex-shrink-0 self-center h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M14.707 10.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 12.586V5a1 1 0 012 0v7.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only"> redução de </span>
+            4.05%
+          </div>
+        </dd>
+      </div>
+    </dl>
+</div>
+  
+
+<div>
+    <h3 class="text-lg leading-6 font-medium text-gray-900">Ideia com ícones</h3>
+  
+    <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="relative bg-white pt-5 px-4 pb-12 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden">
+        <dt>
+          <div class="absolute bg-indigo-500 rounded-md p-3">
+            <!-- Heroicon name: outline/users -->
+            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <p class="ml-16 text-sm font-medium text-gray-500 truncate">Dado 1</p>
+        </dt>
+        <dd class="ml-16 pb-6 flex items-baseline sm:pb-7">
+          <p class="text-2xl font-semibold text-gray-900">71,897</p>
+          <p class="ml-2 flex items-baseline text-sm font-semibold text-green-600">
+            <!-- Heroicon name: solid/arrow-sm-up -->
+            <svg class="self-center flex-shrink-0 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only"> aumento de by </span>
+            122
+          </p>
+          <div class="absolute bottom-0 inset-x-0 bg-gray-50 px-4 py-4 sm:px-6">
+            <div class="text-sm">
+              <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> + informações<span class="sr-only"> Dado 1 stats</span></a>
+            </div>
+          </div>
+        </dd>
+      </div>
+  
+      <div class="relative bg-white pt-5 px-4 pb-12 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden">
+        <dt>
+          <div class="absolute bg-indigo-500 rounded-md p-3">
+            <!-- Heroicon name: outline/mail-open -->
+            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76" />
+            </svg>
+          </div>
+          <p class="ml-16 text-sm font-medium text-gray-500 truncate">Dado 2</p>
+        </dt>
+        <dd class="ml-16 pb-6 flex items-baseline sm:pb-7">
+          <p class="text-2xl font-semibold text-gray-900">58.16%</p>
+          <p class="ml-2 flex items-baseline text-sm font-semibold text-green-600">
+            <!-- Heroicon name: solid/arrow-sm-up -->
+            <svg class="self-center flex-shrink-0 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only"> aumento de by </span>
+            5.4%
+          </p>
+          <div class="absolute bottom-0 inset-x-0 bg-gray-50 px-4 py-4 sm:px-6">
+            <div class="text-sm">
+              <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> + informações<span class="sr-only"> Dado 2 stats</span></a>
+            </div>
+          </div>
+        </dd>
+      </div>
+  
+      <div class="relative bg-white pt-5 px-4 pb-12 sm:pt-6 sm:px-6 shadow rounded-lg overflow-hidden">
+        <dt>
+          <div class="absolute bg-indigo-500 rounded-md p-3">
+            <!-- Heroicon name: outline/cursor-click -->
+            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+            </svg>
+          </div>
+          <p class="ml-16 text-sm font-medium text-gray-500 truncate">Dado 3</p>
+        </dt>
+        <dd class="ml-16 pb-6 flex items-baseline sm:pb-7">
+          <p class="text-2xl font-semibold text-gray-900">24.57%</p>
+          <p class="ml-2 flex items-baseline text-sm font-semibold text-red-600">
+            <!-- Heroicon name: solid/arrow-sm-down -->
+            <svg class="self-center flex-shrink-0 h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M14.707 10.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 12.586V5a1 1 0 012 0v7.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only"> redução de </span>
+            3.2%
+          </p>
+          <div class="absolute bottom-0 inset-x-0 bg-gray-50 px-4 py-4 sm:px-6">
+            <div class="text-sm">
+              <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> + informações<span class="sr-only"> Dado 3 stats</span></a>
+            </div>
+          </div>
+        </dd>
+      </div>
+    </dl>
+</div>
+
+
+
+
+<div class="flex flex-col">
+    <h2>Tabela</h2>
+    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+        <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+          <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+              <tr>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nome</th>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Operador</th>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Situação</th>
+                <th scope="col" class="relative px-6 py-3">
+                  <span class="sr-only">Edit</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Edson</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Edson</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Chefe</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Algo</td>
+
+              </tr>
+  
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="lg:flex lg:h-full lg:flex-col">
+    <header class="relative z-20 flex items-center justify-between border-b border-gray-200 py-4 px-6 lg:flex-none">
+      <h1 class="text-lg font-semibold text-gray-900">
+        <time datetime="2022-01">JAN 2024</time>
+      </h1>
+
+    </header>
+    <div class="shadow ring-1 ring-black ring-opacity-5 lg:flex lg:flex-auto lg:flex-col">
+      <div class="grid grid-cols-7 gap-px border-b border-gray-300 bg-gray-200 text-center text-xs font-semibold leading-6 text-gray-700 lg:flex-none">
+        <div class="bg-white py-2">M<span class="sr-only sm:not-sr-only">on</span></div>
+        <div class="bg-white py-2">T<span class="sr-only sm:not-sr-only">ue</span></div>
+        <div class="bg-white py-2">W<span class="sr-only sm:not-sr-only">ed</span></div>
+        <div class="bg-white py-2">T<span class="sr-only sm:not-sr-only">hu</span></div>
+        <div class="bg-white py-2">F<span class="sr-only sm:not-sr-only">ri</span></div>
+        <div class="bg-white py-2">S<span class="sr-only sm:not-sr-only">at</span></div>
+        <div class="bg-white py-2">S<span class="sr-only sm:not-sr-only">un</span></div>
+      </div>
+      <div class="flex bg-gray-200 text-xs leading-6 text-gray-700 lg:flex-auto">
+        <div class="hidden w-full lg:grid lg:grid-cols-7 lg:grid-rows-6 lg:gap-px">
+          <!--
+            Always include: "relative py-2 px-3"
+            Is current month, include: "bg-white"
+            Is not current month, include: "bg-gray-50 text-gray-500"
+          -->
+          <div class="relative bg-gray-50 py-2 px-3 text-gray-500">
+            <!--
+              Is today, include: "flex h-6 w-6 items-center justify-center rounded-full bg-indigo-600 font-semibold text-white"
+            -->
+            <time datetime="2021-12-27">27</time>
+          </div>
+          <div class="relative bg-gray-50 py-2 px-3 text-gray-500">
+            <time datetime="2021-12-28">28</time>
+          </div>
+          <div class="relative bg-gray-50 py-2 px-3 text-gray-500">
+            <time datetime="2021-12-29">29</time>
+          </div>
+          <div class="relative bg-gray-50 py-2 px-3 text-gray-500">
+            <time datetime="2021-12-30">30</time>
+          </div>
+          <div class="relative bg-gray-50 py-2 px-3 text-gray-500">
+            <time datetime="2021-12-31">31</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-01">1</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-01">2</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-03">3</time>
+            <ol class="mt-2">
+              <li>
+                <a href="#" class="group flex">
+                  <p class="flex-auto truncate font-medium text-gray-900 group-hover:text-indigo-600">Algum evento</p>
+                  <time datetime="2022-01-03T10:00" class="ml-3 hidden flex-none text-gray-500 group-hover:text-indigo-600 xl:block">10AM</time>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="group flex">
+                  <p class="flex-auto truncate font-medium text-gray-900 group-hover:text-indigo-600">Algum evento</p>
+                  <time datetime="2022-01-03T14:00" class="ml-3 hidden flex-none text-gray-500 group-hover:text-indigo-600 xl:block">2PM</time>
+                </a>
+              </li>
+            </ol>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-04">4</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-05">5</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-06">6</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-07">7</time>
+            <ol class="mt-2">
+              <li>
+                <a href="#" class="group flex">
+                  <p class="flex-auto truncate font-medium text-gray-900 group-hover:text-indigo-600">Algum evento</p>
+                  <time datetime="2022-01-08T18:00" class="ml-3 hidden flex-none text-gray-500 group-hover:text-indigo-600 xl:block">6PM</time>
+                </a>
+              </li>
+            </ol>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-08">8</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-09">9</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-10">10</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-11">11</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-12" class="flex h-6 w-6 items-center justify-center rounded-full bg-indigo-600 font-semibold text-white">12</time>
+            <ol class="mt-2">
+              <li>
+                <a href="#" class="group flex">
+                  <p class="flex-auto truncate font-medium text-gray-900 group-hover:text-indigo-600">Algum evento</p>
+                  <time datetime="2022-01-25T14:00" class="ml-3 hidden flex-none text-gray-500 group-hover:text-indigo-600 xl:block">2PM</time>
+                </a>
+              </li>
+            </ol>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-13">13</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-14">14</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-15">15</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-16">16</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-17">17</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-18">18</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-19">19</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-20">20</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-21">21</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-22">22</time>
+            <ol class="mt-2">
+              <li>
+                <a href="#" class="group flex">
+                  <p class="flex-auto truncate font-medium text-gray-900 group-hover:text-indigo-600">Algum evento</p>
+                  <time datetime="2022-01-22T15:00" class="ml-3 hidden flex-none text-gray-500 group-hover:text-indigo-600 xl:block">3PM</time>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="group flex">
+                  <p class="flex-auto truncate font-medium text-gray-900 group-hover:text-indigo-600">Algum evento</p>
+                  <time datetime="2022-01-22T19:00" class="ml-3 hidden flex-none text-gray-500 group-hover:text-indigo-600 xl:block">7PM</time>
+                </a>
+              </li>
+            </ol>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-23">23</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-24">24</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-25">25</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-26">26</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-27">27</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-28">28</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-29">29</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-30">30</time>
+          </div>
+          <div class="relative bg-white py-2 px-3">
+            <time datetime="2022-01-31">31</time>
+          </div>
+          <div class="relative bg-gray-50 py-2 px-3 text-gray-500">
+            <time datetime="2022-02-01">1</time>
+          </div>
+          <div class="relative bg-gray-50 py-2 px-3 text-gray-500">
+            <time datetime="2022-02-02">2</time>
+          </div>
+          <div class="relative bg-gray-50 py-2 px-3 text-gray-500">
+            <time datetime="2022-02-03">3</time>
+          </div>
+          <div class="relative bg-gray-50 py-2 px-3 text-gray-500">
+            <time datetime="2022-02-04">4</time>
+            <ol class="mt-2">
+              <li>
+                <a href="#" class="group flex">
+                  <p class="flex-auto truncate font-medium text-gray-900 group-hover:text-indigo-600">Algum evento</p>
+                  <time datetime="2022-02-04T21:00" class="ml-3 hidden flex-none text-gray-500 group-hover:text-indigo-600 xl:block">9PM</time>
+                </a>
+              </li>
+            </ol>
+          </div>
+          <div class="relative bg-gray-50 py-2 px-3 text-gray-500">
+            <time datetime="2022-02-05">5</time>
+          </div>
+          <div class="relative bg-gray-50 py-2 px-3 text-gray-500">
+            <time datetime="2022-02-06">6</time>
+          </div>
+        </div>
+        <div class="isolate grid w-full grid-cols-7 grid-rows-6 gap-px lg:hidden">
+          <!--
+            Always include: "flex h-14 flex-col py-2 px-3 hover:bg-gray-100 focus:z-10"
+            Is current month, include: "bg-white"
+            Is not current month, include: "bg-gray-50"
+            Is selected or is today, include: "font-semibold"
+            Is selected, include: "text-white"
+            Is not selected and is today, include: "text-indigo-600"
+            Is not selected and is current month, and is not today, include: "text-gray-900"
+            Is not selected, is not current month, and is not today: "text-gray-500"
+          -->
+          <button type="button" class="flex h-14 flex-col bg-gray-50 py-2 px-3 text-gray-500 hover:bg-gray-100 focus:z-10">
+            <!--
+              Always include: "ml-auto"
+              Is selected, include: "flex h-6 w-6 items-center justify-center rounded-full"
+              Is selected and is today, include: "bg-indigo-600"
+              Is selected and is not today, include: "bg-gray-900"
+            -->
+            <time datetime="2021-12-27" class="ml-auto">27</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-gray-50 py-2 px-3 text-gray-500 hover:bg-gray-100 focus:z-10">
+            <time datetime="2021-12-28" class="ml-auto">28</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-gray-50 py-2 px-3 text-gray-500 hover:bg-gray-100 focus:z-10">
+            <time datetime="2021-12-29" class="ml-auto">29</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-gray-50 py-2 px-3 text-gray-500 hover:bg-gray-100 focus:z-10">
+            <time datetime="2021-12-30" class="ml-auto">30</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-gray-50 py-2 px-3 text-gray-500 hover:bg-gray-100 focus:z-10">
+            <time datetime="2021-12-31" class="ml-auto">31</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-01" class="ml-auto">1</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-02" class="ml-auto">2</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-03" class="ml-auto">3</time>
+            <p class="sr-only">2 events</p>
+            <div class="-mx-0.5 mt-auto flex flex-wrap-reverse">
+              <div class="mx-0.5 mb-1 h-1.5 w-1.5 rounded-full bg-gray-400"></div>
+              <div class="mx-0.5 mb-1 h-1.5 w-1.5 rounded-full bg-gray-400"></div>
+            </div>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-04" class="ml-auto">4</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-05" class="ml-auto">5</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-06" class="ml-auto">6</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-07" class="ml-auto">7</time>
+            <p class="sr-only">1 event</p>
+            <div class="-mx-0.5 mt-auto flex flex-wrap-reverse">
+              <div class="mx-0.5 mb-1 h-1.5 w-1.5 rounded-full bg-gray-400"></div>
+            </div>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-08" class="ml-auto">8</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-09" class="ml-auto">9</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-10" class="ml-auto">10</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-11" class="ml-auto">11</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 font-semibold text-indigo-600 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-12" class="ml-auto">12</time>
+            <p class="sr-only">1 event</p>
+            <div class="-mx-0.5 mt-auto flex flex-wrap-reverse">
+              <div class="mx-0.5 mb-1 h-1.5 w-1.5 rounded-full bg-gray-400"></div>
+            </div>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-13" class="ml-auto">13</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-14" class="ml-auto">14</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-15" class="ml-auto">15</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-16" class="ml-auto">16</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-17" class="ml-auto">17</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-18" class="ml-auto">18</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-19" class="ml-auto">19</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-20" class="ml-auto">20</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-21" class="ml-auto">21</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 font-semibold text-white hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-22" class="ml-auto flex h-6 w-6 items-center justify-center rounded-full bg-gray-900">22</time>
+            <p class="sr-only">2 events</p>
+            <div class="-mx-0.5 mt-auto flex flex-wrap-reverse">
+              <div class="mx-0.5 mb-1 h-1.5 w-1.5 rounded-full bg-gray-400"></div>
+              <div class="mx-0.5 mb-1 h-1.5 w-1.5 rounded-full bg-gray-400"></div>
+            </div>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-23" class="ml-auto">23</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-24" class="ml-auto">24</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-25" class="ml-auto">25</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-26" class="ml-auto">26</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-27" class="ml-auto">27</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-28" class="ml-auto">28</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-29" class="ml-auto">29</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-30" class="ml-auto">30</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-white py-2 px-3 text-gray-900 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-01-31" class="ml-auto">31</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-gray-50 py-2 px-3 text-gray-500 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-02-01" class="ml-auto">1</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-gray-50 py-2 px-3 text-gray-500 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-02-02" class="ml-auto">2</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-gray-50 py-2 px-3 text-gray-500 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-02-03" class="ml-auto">3</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-gray-50 py-2 px-3 text-gray-500 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-02-04" class="ml-auto">4</time>
+            <p class="sr-only">1 event</p>
+            <div class="-mx-0.5 mt-auto flex flex-wrap-reverse">
+              <div class="mx-0.5 mb-1 h-1.5 w-1.5 rounded-full bg-gray-400"></div>
+            </div>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-gray-50 py-2 px-3 text-gray-500 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-02-05" class="ml-auto">5</time>
+            <p class="sr-only">0 events</p>
+          </button>
+          <button type="button" class="flex h-14 flex-col bg-gray-50 py-2 px-3 text-gray-500 hover:bg-gray-100 focus:z-10">
+            <time datetime="2022-02-06" class="ml-auto">6</time>
+            <p class="sr-only">0 events</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="py-10 px-4 sm:px-6 lg:hidden">
+      <ol class="divide-y divide-gray-100 overflow-hidden rounded-lg bg-white text-sm shadow ring-1 ring-black ring-opacity-5">
+        <li class="group flex p-4 pr-6 focus-within:bg-gray-50 hover:bg-gray-50">
+          <div class="flex-auto">
+            <p class="font-semibold text-gray-900">Algum evento</p>
+            <time datetime="2022-01-15T09:00" class="mt-2 flex items-center text-gray-700">
+              <!-- Heroicon name: solid/clock -->
+              <svg class="mr-2 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+              </svg>
+              3PM
+            </time>
+          </div>
+          <a href="#" class="ml-6 flex-none self-center rounded-md border border-gray-300 bg-white py-2 px-3 font-semibold text-gray-700 opacity-0 shadow-sm hover:bg-gray-50 focus:opacity-100 group-hover:opacity-100">Edit<span class="sr-only">, Algum evento</span></a>
+        </li>
+  
+        <li class="group flex p-4 pr-6 focus-within:bg-gray-50 hover:bg-gray-50">
+          <div class="flex-auto">
+            <p class="font-semibold text-gray-900">Algum evento</p>
+            <time datetime="2022-01-22T19:00" class="mt-2 flex items-center text-gray-700">
+              <!-- Heroicon name: solid/clock -->
+              <svg class="mr-2 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+              </svg>
+              7PM
+            </time>
+          </div>
+          <a href="#" class="ml-6 flex-none self-center rounded-md border border-gray-300 bg-white py-2 px-3 font-semibold text-gray-700 opacity-0 shadow-sm hover:bg-gray-50 focus:opacity-100 group-hover:opacity-100">Edit<span class="sr-only">, Algum evento</span></a>
+        </li>
+      </ol>
+    </div>
+  </div>
+  
+</div>
+
+
+
+  
+</body>
+</html>
